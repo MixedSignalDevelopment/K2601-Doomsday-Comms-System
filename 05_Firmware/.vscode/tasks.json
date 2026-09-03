@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Flash SoftDevice (one-time, before first upload)",
+      "type": "process",
+      "command": "${userHome}/.platformio/packages/tool-openocd/bin/openocd.exe",
+      "args": ["-f", "flash_softdevice.cfg"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "group": "flash", "panel": "dedicated", "reveal": "always" },
+      "detail": "Mass-erase + flash s140 SoftDevice. Run ONCE, then PlatformIO Upload the app."
+    },
+    {
+      "label": "RTT: OpenOCD server (start first)",
+      "type": "process",
+      "command": "${userHome}/.platformio/packages/tool-openocd/bin/openocd.exe",
+      "args": ["-f", "openocd_rtt.cfg"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "group": "rtt", "panel": "dedicated", "reveal": "always" },
+      "detail": "Attaches ST-Link over SWD and serves the RTT console on localhost:9090"
+    },
+    {
+      "label": "RTT console",
+      "type": "process",
+      "command": "${userHome}/.platformio/penv/Scripts/pio.exe",
+      "args": ["device", "monitor", "--port", "socket://localhost:9090", "--echo"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "group": "rtt", "panel": "dedicated", "reveal": "always" },
+      "detail": "Terminal for the RTT console — run the OpenOCD server task first"
+    }
+  ]
+}

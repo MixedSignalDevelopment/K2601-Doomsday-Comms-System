@@ -1,0 +1,43 @@
+#VRML V2.0 utf8
+# XINGLIGHT XL-4008UOC per datasheet: 4.0x1.4x0.8mm side-view LED
+# pin1(cathode,+x,marked) pin2(anode,-x); emission -Y; KiCad 0.1inch units
+Transform { translation 0.00000 0.00000 0.16535
+  children [ Shape { appearance Appearance { material Material {
+      diffuseColor 0.93 0.93 0.90 specularColor 0.3 0.3 0.3 shininess 0.1 transparency 0.0 } }
+    geometry Box { size 1.45669 0.55118 0.29921 } } ] }
+Transform { translation 0.00000 -0.26772 0.17717
+  children [ Shape { appearance Appearance { material Material {
+      diffuseColor 1.0 0.55 0.10 specularColor 1 0.9 0.7 shininess 0.9 transparency 0.3 } }
+    geometry Box { size 0.70866 0.03937 0.21654 } } ] }
+Transform { translation 0.00000 -0.26181 0.17717
+  children [ Shape { appearance Appearance { material Material {
+      diffuseColor 0.75 0.73 0.68 specularColor 0.2 0.2 0.2 shininess 0.1 transparency 0.0 } }
+    geometry Box { size 1.12598 0.02362 0.24409 } } ] }
+Transform { translation -0.75787 0.00000 0.16535
+  children [ Shape { appearance Appearance { material Material {
+      diffuseColor 0.76 0.78 0.79 specularColor 1 1 1 shininess 0.9 transparency 0.0 } }
+    geometry Box { size 0.05906 0.51181 0.31496 } } ] }
+Transform { translation -0.91535 0.00000 0.01969
+  children [ Shape { appearance Appearance { material Material {
+      diffuseColor 0.76 0.78 0.79 specularColor 1 1 1 shininess 0.9 transparency 0.0 } }
+    geometry Box { size 0.25591 0.41339 0.03937 } } ] }
+Transform { translation -0.79528 0.00000 0.09449
+  children [ Shape { appearance Appearance { material Material {
+      diffuseColor 0.76 0.78 0.79 specularColor 1 1 1 shininess 0.9 transparency 0.0 } }
+    geometry Box { size 0.04724 0.41339 0.16535 } } ] }
+Transform { translation 0.75787 0.00000 0.16535
+  children [ Shape { appearance Appearance { material Material {
+      diffuseColor 0.76 0.78 0.79 specularColor 1 1 1 shininess 0.9 transparency 0.0 } }
+    geometry Box { size 0.05906 0.51181 0.31496 } } ] }
+Transform { translation 0.91535 0.00000 0.01969
+  children [ Shape { appearance Appearance { material Material {
+      diffuseColor 0.76 0.78 0.79 specularColor 1 1 1 shininess 0.9 transparency 0.0 } }
+    geometry Box { size 0.25591 0.41339 0.03937 } } ] }
+Transform { translation 0.79528 0.00000 0.09449
+  children [ Shape { appearance Appearance { material Material {
+      diffuseColor 0.76 0.78 0.79 specularColor 1 1 1 shininess 0.9 transparency 0.0 } }
+    geometry Box { size 0.04724 0.41339 0.16535 } } ] }
+Transform { translation 0.61024 0.21654 0.31102
+  children [ Shape { appearance Appearance { material Material {
+      diffuseColor 0.25 0.25 0.25 specularColor 0.1 0.1 0.1 shininess 0.05 transparency 0.0 } }
+    geometry Box { size 0.11811 0.08661 0.02362 } } ] }
