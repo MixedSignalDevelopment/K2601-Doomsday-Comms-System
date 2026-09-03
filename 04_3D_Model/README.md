@@ -1,11 +1,11 @@
 # 3D Model
 
-Full 3D model of the assembled Doomsday Comms System (D.C.S., SKU OS2601) board,
+Enclosure design for the assembled Doomsday Comms System (D.C.S., SKU OS2601) board,
 for mechanical fit, enclosure design, and review.
 
 ## File
 
-- `K2601 DCS.step` — assembled board + Enclosure, **STEP (AP214)** format.
+- `K2601 DCS.step` —  Enclosure, **STEP (AP214)** format.
 
 ## Usage
 
