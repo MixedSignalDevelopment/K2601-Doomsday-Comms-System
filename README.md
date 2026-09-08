@@ -19,28 +19,10 @@ LCD, jog-wheel input, LRA haptics, piezo, and USB-C LiPo charging.
 
 Each folder has its own `README.md` with the specifics.
 
-## Naming note
-
-The customer-facing product is the **Doomsday Comms System (D.C.S.), SKU OS2601**.
-The KiCad project and the firmware are fully rebranded to **dcs / OS2601**. The
-**gerbers** and the **3D STEP model** still carry the internal design name
-(`Messager-*` / `K2601`) in their filenames — this is the same board. Those were
-left as-is because the gerber job manifest references its files by name, and the
-names are irrelevant to fabrication.
-
 ## Ownership & licensing
 
 - Design © 2026 **Mixed Signal Development GmbH**.
 - **Firmware** is released under the **MIT License** — see
   [`05_Firmware/LICENSE`](05_Firmware/LICENSE).
-- **Hardware** design files are provided for production of this board. If/when
-  published as open hardware, the customary pairing is a hardware licence such
-  as **CERN-OHL-S**.
 
-## Excluded on purpose
 
-- **Internal BOM** (with internal costing) — not included; only the production
-  BOM is here.
-- **Nordic s140 SoftDevice binary** — proprietary, not redistributable; see
-  `05_Firmware/softdevice/README.md` for where to obtain it.
-- Local machine paths embedded in the CAD files have been scrubbed.
